@@ -1,0 +1,41 @@
+body {
+    background-color: #4d004d;
+}
+
+.navbar {
+    background-color:  	#c69fc6;
+}
+.product-card {
+    background-color:  #ff80ff;
+    width: 36rem;
+}
+
+#show-one.product-card {
+    background-color:  	#990099;
+}
+
+.label-tab {
+    width: 8rem; 
+}
+
+.input-group-text {
+    background-color: #ffb3ff;
+}
+
+.input-box {
+    background-color: rgb(255, 102, 140, 0.2);
+    border: #ff956c 1px solid;
+}
+
+.add-product-btn {
+    background-color: #ff66b3;
+    width: 8rem;
+}
+
+.product-details {
+    color: #ffe6ff;
+}
+
+hr.product-divide {
+    color: #ff80ff;
+}
