@@ -1,14 +1,17 @@
 import ProductForm from './components/ProductForm';
 import ProductList from './components/ProductList';
 import ProductDetail from './components/ProductDetail';
+import ProductUpdate from './components/ProductUpdate';
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 import './App.css';
+
 
 function App() {
 
 
     return (
         <BrowserRouter>
+            
             <nav className="navbar navbar-expand-lg navbar-light">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="/">Product Manager</a>
@@ -23,6 +26,7 @@ function App() {
                     </div>
                 </div>
             </nav>
+
             <Switch>
                 <Route exact path="/">
                     <ProductList/>
@@ -35,8 +39,12 @@ function App() {
                 <Route exact path="/product/:id">
                     <ProductDetail/>
                 </Route>
-    
+
+                <Route exact path="/product/update/:id">
+                    <ProductUpdate/>
+                </Route>
             </Switch>
+
         </BrowserRouter>
     );
 }

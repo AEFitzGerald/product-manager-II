@@ -3,7 +3,6 @@ import axios from 'axios';
 import { useHistory } from "react-router-dom";
 
 
-
 const ProductForm = () => {
     
     const history = useHistory(); 
@@ -83,10 +82,10 @@ const ProductForm = () => {
                             <div className="input-group-prepend label-tab">
                                 <label className="input-group-text" htmlFor="inputGroupProducts">Title</label>
                             </div>
-                            <input 
-                            onChange ={(e)=> {changeHandler(e)}}
-                            name ="title"  
+                            <input
                             type="text" 
+                            name ="title"  
+                            onChange ={(e)=> {changeHandler(e)}}
                             className="flex-grow-1 formControl input-box"
                             /> 
                             <p className="text-primary">{validationErrors.title? validationErrors.title.message: ""}</p>
@@ -97,9 +96,9 @@ const ProductForm = () => {
                                 <span className="input-group-text">Price</span>
                             </div>
                             <input 
-                            onChange ={(e)=> {changeHandler(e)}}
-                            name ="price"  
                             type="number" 
+                            name ="price"  
+                            onChange ={(e)=> {changeHandler(e)}}
                             className="flex-grow-1 formControl input-box"
                             /> 
                             <p className="text-primary">{validationErrors.price? validationErrors.price.message: ""}</p>
@@ -110,9 +109,9 @@ const ProductForm = () => {
                                 <label className="input-group-text" htmlFor="inputGroupProducts">Description</label>
                             </div>
                             <input 
-                            onChange ={(e)=> {changeHandler(e)}}
-                            name ="description"  
                             type="text" 
+                            name ="description"  
+                            onChange ={(e)=> {changeHandler(e)}}
                             className="flex-grow-1 formControl input-box"
                             /> 
                             <p className="text-primary">{validationErrors.description? validationErrors.description.message: ""}</p>

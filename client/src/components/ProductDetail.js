@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import { useParams } from "react-router-dom";
-import e from 'cors';
-    
+
 const ProductDetail = () => {
     const [product, setProduct] = useState({})
     const { id } = useParams();

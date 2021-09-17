@@ -5,6 +5,7 @@ body {
 .navbar {
     background-color:  	#c69fc6;
 }
+
 .product-card {
     background-color:  #ff80ff;
     width: 36rem;
@@ -29,7 +30,16 @@ body {
 
 .add-product-btn {
     background-color: #ff66b3;
+    margin-right: 3rem;
     width: 8rem;
+}
+
+#update-btn {
+    background-color:#ffb3ff;
+}
+
+#delete-btn {
+    background-color: #ff6666;
 }
 
 .product-details {
